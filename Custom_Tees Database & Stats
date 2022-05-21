@@ -1,0 +1,18 @@
+CREATE TABLE Custom_Tees (ID Integer Primary Key, Name text, Sleeve text, SKU Integer, Price integer, Units_Sold integer);
+
+INSERT INTO Custom_Tees VALUES (1,'Manic_Monday','L',198,20,35);
+INSERT INTO Custom_Tees VALUES (2,'Tie_Dye','S',199,22,29);
+INSERT INTO Custom_Tees VALUES (3,'Taco_Tues','S',200,20,33);
+INSERT INTO Custom_Tees VALUES (4,'Plain','L',201,16,45);
+INSERT INTO Custom_Tees VALUES (5,'MAGICAL','S',202,20,17);
+INSERT INTO Custom_Tees VALUES (6,'Starlight','S',203,20,27);
+INSERT INTO Custom_Tees VALUES (7,'BDAY','S',204,10,11);
+INSERT INTO Custom_Tees VALUES (8,'Summer','S',205,15,29);
+INSERT INTO Custom_Tees VALUES (9,'80s','L',206,20,49);
+INSERT INTO Custom_Tees VALUES (10,'Sunday_Funday','S',207,15,30);
+INSERT INTO Custom_Tees VALUES (11,'EarthDay','S',208,15,44);
+INSERT INTO Custom_Tees VALUES (12,'Recycle','L',209,20,20);
+INSERT INTO Custom_Tees VALUES (13,'BestDAD','S',210,20,41);
+INSERT INTO Custom_Tees VALUES (14,'BestMOM','L',211,20,55);
+INSERT INTO Custom_Tees VALUES (15,'Cats','S',212,15,54);
+SELECT * From Custom_Tees Where Price >= 10 Order By price,units_sold ASC;
